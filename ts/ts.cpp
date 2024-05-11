@@ -84,10 +84,10 @@ void recvThread(int sd, int sd_arr[], int *sd_i) {
         }
     }
 
-    printf("sd_i: %d\n", *sd_i);
-    printf("sd_arr[%d]: %d\n", *sd_i - 1, sd_arr[*sd_i - 1]);
+    //printf("sd_i: %d\n", *sd_i);
+    //printf("sd_arr[%d]: %d\n", *sd_i - 1, sd_arr[*sd_i - 1]);
 
-	printf("connected %d\n", sd);
+	printf("connected\n");
 	fflush(stdout);
 	static const int BUFSIZE = 65536;
 	char buf[BUFSIZE];

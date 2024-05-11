@@ -46,6 +46,13 @@ struct Param {
 			}
 
             if (strcmp(argv[i], "-b") == 0) {
+                for (int i = 1; i < argc;) {
+                    if (strcmp(argv[i], "-e") != 0) {
+                        fprintf(stderr, "u need to use broadcast with echo\n");
+                        return false;
+                    }
+                }
+
                 broad_cast = true;
                 i++;
                 continue;
